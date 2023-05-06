@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+	<head>
+
+        <meta charset="utf-8" />
+
+        <title>CV</title>
+
+		 <link rel="shortcut icon" href="">
+
+        <meta name="author" content="ja pan zniszczenia" />
+
+        <link href="style.css" rel="stylesheet" id="color-opt">
+
+		
+
+		
+
+	</head>
+
+	<body>
+
+		<div>
+
+			<fieldset>
+
+			<legend>dane osobowe</legend>
+
+				<input type="text" placeholder="imie" name='imie' required=""/>
+
+				<input type="text" placeholder="nazwisko" name='nazwisko' required=""/>
+
+				<input type="date" placeholder="data" name='data' required=""/>
+
+			</fieldset>
+
+				
+
+			<fieldset>
+
+			<legend>dane kontaktowe</legend>
+
+				<input type="tel" placeholder="phone" name="phone"  pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required=""/>
+
+				<input type="email" placeholder="e-mail" name="email" required=""/>
+
+				<input type="url" placeholder="www" name="url" />
+
+			</fieldset>
+
+				
+
+			<fieldset>
+
+			<legend>languages</legend>
+
+				<div><label><input type="checkbox" value="angielski" name="jenzyki"/> angielski</label></div>
+
+				<div><label><input type="checkbox" value="niemiecki" name="jenzyki"/> niemiecki</label></div>
+
+				<div><label><input type="checkbox" value="szwedzki" name="jenzyki"/> szwedzki</label></div>
+
+				<div><label><input type="checkbox" value="hiszpaniski" name="jenzyki"/> hiszpaniski</label></div>
+
+			</fieldset>
+
+				
+
+			<fieldset>
+
+			<legend>work</legend>
+
+				<div>
+
+					<label><input id="pierwsza" type="radio" name="praca" value="false" onchange="works(1)"/>pierwsza</label>
+
+					<label><input id="kolejna" type="radio" name="praca" value="true" onchange="works(2)"/>druga</label>
+
+				</div>
+
+				<textarea id="work" disabled=""></textarea>
+
+			</fieldset>
+
+				
+
+			<fieldset>
+
+				<legend>foto</legend>
+
+				<input type="url" id="file"/>
+
+			</fieldset>
+
+			
+
+			<fieldset>
+
+				<legend>color</legend>
+
+				<input type="color" id="color" />
+
+			</fieldset>
+
+			<input type="button" onclick="worker()" value="xd co ja robie">
+
+		</div>
+
+		
+
+		<div>
+
+			<main id="cv" >
+
+			<div class="border"></div>
+
+				<div id="gura">
+
+				<div id="dane">
+
+				<h2 id="kto">Marek Lowca</h2>
+
+				<p id="cv_email">E-mail: dawid2020@dawid2020.usermd.net</p>
+
+				<p id="cv_phone">Telefon: dd</p>
+
+				<p id="cv_date">Data urodzenia: dd</p>
+
+				<p id="cv_www">WWW: dawid2020.usermd.net</p>
+
+				</div>
+
+				<div style="min-height:100px;">
+
+				<img id="profilowe" src=""/>
+
+				</div>
+
+				</div>
+
+				<div class="border"></div>
+
+				<div id="srodek">
+
+				
+
+					<div id="worka">
+
+						<h2>Doświadczenie zawodowe</h2>
+
+						<div id="cv_dos"></div>
+
+					</div>
+
+					
+
+					<div class="border_left">
+
+						<div>
+
+								<h2>Języki obce</h2>
+
+							<ul id="cv_language">
+
+								<li>angielski</li>
+
+								<li>niemiecki</li>
+
+								<li>szwedzki</li>
+
+								<li>hiszpaniski</li>
+
+							</ul>
+
+						</div>
+
+						
+
+					</div>
+
+					
+
+				</div>
+
+				<div class="border" style="margin-top:0px;"></div>
+
+				<div id="zgoda">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).</div>
+
+				
+
+			</main>
+
+		</div>
+
+	</body>
+
+<script src="index.js" type="text/javascript"></script> 
+
+</html>

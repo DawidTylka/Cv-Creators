@@ -1,0 +1,72 @@
+body{
+	background-color:black;
+	margin:0px;
+	padding:0px;
+	display:flex;
+	justify-content: center;
+	text-align:center;
+	color:white;
+	min-width:680px;
+}
+fieldset{
+	display:flex;
+	flex-direction:column;
+}
+
+main{
+	width:calc(210px*3);
+	height:calc(297px*3);
+	
+	padding:10px;
+}
+#profilowe{
+	margin:auto;
+	min-width:100px;
+	border-radius:100%;
+	min-height:80px;
+	max-height:100px;
+}
+
+#gura{
+position: relative;
+}
+
+#dane{
+position: absolute;
+top:0px;
+left:10px;
+font-size: 14px;
+
+}
+h2{
+margin:0px;
+text-align:left;
+}
+#dane>p{
+margin:0px;
+text-align:left;
+}
+.border{
+margin:10px;
+border-bottom: 1px solid white;
+}
+
+.border_left{
+margin-top:-10px;
+margin-left:10px;
+border-left: 2px solid white;
+height:100%;
+width:35%;
+text-align:left;
+}
+
+#work{
+	width:65%;
+	margin-left:10px;
+}
+
+#srodek{
+	display:flex;
+}
+
+ul{padding-left:20px;}
